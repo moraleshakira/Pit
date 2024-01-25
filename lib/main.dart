@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-
+import 'package:sqflite/sqflite.dart';
+import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
+import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'demo.dart';
 
-
 void main() {
+  //sqfliteFfiInit();
+  //databaseFactory = databaseFactoryFfiWeb;
   //to avoid any crash
   //add ensureInitialized() before runApp()
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,6 +20,7 @@ class MyApp extends StatefulWidget {
 
   @override
   _MyAppState createState() => _MyAppState();
+
 }
 
 class _MyAppState extends State<MyApp> {
